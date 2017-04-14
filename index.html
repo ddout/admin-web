@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>ei-web-app</title>
+	</head>
+
+	<body>
+
+		<div id="app-main" class="container-fluid">
+			<!--  -->
+			<comp-nav></comp-nav>
+
+			<!--  -->
+			<div class="container-fluid main-panel">
+				<router-view></router-view>
+			</div>
+			<!-- app end -->
+		</div>
+
+		<!--  -->
+		<script src="js/plugins/vue/vue.js"></script>
+		<script src="js/plugins/vue/vue-router.js"></script>
+		<script data-main="js/apps/main.js?t=1" src="js/plugins/require/require.js"></script>
+	</body>
+
+</html>
