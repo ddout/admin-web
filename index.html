@@ -5,22 +5,38 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>ei-web-app</title>
+		<script src="js/plugins/browser/browser.js"></script>
 	</head>
 
 	<body>
+		<!--  -->
 
-		<div id="app-main" class="container-fluid">
+		<div id="app-main" class="container">
 			<!--  -->
-			<comp-nav></comp-nav>
+			<keep-alive>
+				<comp-nav v-bind:params="userInfo"></comp-nav>
+			</keep-alive>
 
 			<!--  -->
 			<div class="container-fluid main-panel">
 				<router-view></router-view>
 			</div>
 			<!-- app end -->
+			<div class="container-fluid">
+				<div class="rows">
+					<ul class="col-xs-12">
+						<li class="col-xs-12 col-sm-7 col-lg-3 colorff nolist text_align_c">地址：成都市航空路6号丰德国际广场D2座9楼</li>
+						<li class="col-xs-12 col-sm-5 col-lg-3 colorff nolist text_align_c">传真：028-85133964</li>
+						<li class="col-xs-12 col-sm-7 col-lg-3 colorff nolist text_align_c">咨询热线：400-682-2201</li>
+						<li class="col-xs-12 col-sm-5 col-lg-3 colorff nolist text_align_c">
+							<a href="http://web.hydzfp.com/Modular/login/admin.html" style="color: #fff;">我是管理员</a>
+						</li>
+					</ul>
+					<p class="col-xs-12 col-sm-6" style="text-align: center;">Copyright © 2016 hydzfp.com Co.,Ltd. All Rights Reserved</p>
+					<p class="col-xs-12 col-sm-6" style="text-align: center;">成都沪友科技发展有限公司版权所有 蜀ICP备06001167号</p>
+				</div>
+			</div>
 		</div>
-
-		<!--  -->
 		<script src="js/plugins/vue/vue.js"></script>
 		<script src="js/plugins/vue/vue-router.js"></script>
 		<script data-main="js/apps/main.js?t=1" src="js/plugins/require/require.js"></script>

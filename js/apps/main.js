@@ -55,7 +55,7 @@
 			}
 		}
 	});
-	require(['jquery', 'bootstrap', 'apps/vue-route-config','jquerySidebarMenu', 'components/nav/nav'], function() {
+	require(['jquery', 'bootstrap', 'apps/vue-route-config','jquerySidebarMenu', 'md5', 'components/nav/nav'], function() {
 		require(['apps/app', 'css!apps/css/app.css']);
 	});
 })(window);

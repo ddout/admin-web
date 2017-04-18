@@ -1,5 +1,5 @@
 * {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 body {
@@ -7,7 +7,7 @@ body {
 }
 
 #app-main {
-	padding-top: 60px;
+	padding-top: 70px;
 }
 
 .main-panel {
@@ -22,8 +22,55 @@ body {
 .btn-group-sm .btn {
 	margin-right: 5px;
 }
-.navbar-nav li a{font-size: 14px;}
 
-.navbar-brand {
-    font-size: 30px;
+.navbar-nav li a {
+	font-size: 14px;
+}
+
+.navbar-brand,
+.navbar-default .navbar-brand {
+	font-size: 30px;
+	color: #f56a6a;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+	color: #f56a6a;
+	cursor: pointer;
+}
+
+.navbar-header .navbar-title,
+.navbar-header .navbar-title:focus,
+.navbar-header .navbar-title:hover {
+	font-size: 18px;
+	font-weight: 700;
+	color: #000000;
+	cursor: auto;
+}
+
+.navbar-cdhy {
+	background-color: #f8f8f8;
+	border-bottom: 5px solid #f56a6a;
+}
+
+.navbar-default .navbar-toggle {
+	border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #f56a6a;
+}
+
+.nav>li {
+	color: inherit;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-color: #FFFFFF;
+}
+
+.cpointer{
+	color: #f56a6a;
+	cursor: pointer;
 }

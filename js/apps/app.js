@@ -2,7 +2,17 @@ const app = new Vue({
 	el: '#app-main',
 	router: router,
 	data: {
-		sysMsg: ''
+		sysMsg: '',
+		userInfo: {
+			user: 'a',
+			pwd: 'sd',
+			imgcode: 's',
+			auth: true,
+			authMsg: 'f'
+		}
+	},
+	mounted: function() {
+
 	},
 	methods: {
 		//
@@ -11,7 +21,8 @@ const app = new Vue({
 			var config = {
 				url: cfg['url'],
 				data: cfg['data'],
-				dataType: 'json',
+				dataType: cfg['dataType'] ? cfg['dataType'] : 'json',
+				callback: cfg['callback'] ? cfg['callback'] : '',
 				type: 'post',
 				success: function(res) {
 					if('function' === (typeof cfg.unlock)) {
